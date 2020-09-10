@@ -1,0 +1,54 @@
+<!DOCTYPE html><html><head><meta http-equiv=Content-Type content="text/html; charset=utf-8"><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"><meta name=apple-mobile-web-app-capable content=yes><meta name=apple-mobile-web-app-status-bar-style content=black><meta name=format-detection content="telephone=no"><meta http-equiv=X-UA-Compatible content="chrome=1"><link rel=stylesheet href=cdn/element-ui/2.12.0/theme-chalk/index.css><link rel=stylesheet href=cdn/animate/3.5.2/animate.css><link rel=stylesheet href=cdn/iconfont/1.0.0/index.css><link rel=stylesheet href=cdn/avue/2.1.2/index.css><script src=cdn/xlsx/FileSaver.min.js></script><script src=cdn/xlsx/xlsx.full.min.js></script><link rel=icon href=favicon.png><title>企业级开发平台</title><style>html,
+    body,
+    #app {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .avue-home {
+      background-color: #303133;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .avue-home__main {
+      user-select: none;
+      width: 100%;
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .avue-home__footer {
+      width: 100%;
+      flex-grow: 0;
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    .avue-home__footer>a {
+      font-size: 12px;
+      color: #ABABAB;
+      text-decoration: none;
+    }
+
+    .avue-home__loading {
+      height: 32px;
+      width: 32px;
+      margin-bottom: 20px;
+    }
+
+    .avue-home__title {
+      color: #FFF;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .avue-home__sub-title {
+      color: #ABABAB;
+      font-size: 12px;
+    }</style><link href=css/chunk-00c6c5d5.f8743e0a.css rel=prefetch><link href=css/chunk-052d4ec6.0cf269d4.css rel=prefetch><link href=css/chunk-0b20dfaf.a7a5530c.css rel=prefetch><link href=css/chunk-19603e13.61fa703f.css rel=prefetch><link href=css/chunk-2a1d333f.ee157a08.css rel=prefetch><link href=css/chunk-30c3e897.499838df.css rel=prefetch><link href=css/chunk-3b2aa7bc.9aba91a3.css rel=prefetch><link href=css/chunk-3d257b48.fd990243.css rel=prefetch><link href=css/chunk-44a537be.e676467e.css rel=prefetch><link href=css/chunk-4e13d2a3.a3b4fddd.css rel=prefetch><link href=css/chunk-7468b716.d60dbe5c.css rel=prefetch><link href=css/chunk-7dae1e53.84929dd5.css rel=prefetch><link href=css/chunk-8af9b2e4.9320b678.css rel=prefetch><link href=css/chunk-9ad74910.550ac0fd.css rel=prefetch><link href=css/chunk-a054a0e6.011d102b.css rel=prefetch><link href=css/chunk-b9b01d7a.cb1c179a.css rel=prefetch><link href=css/chunk-bbecfa4c.5ad46ca9.css rel=prefetch><link href=css/chunk-bdc81f80.9d9f83e8.css rel=prefetch><link href=css/chunk-dedfa550.78174ea1.css rel=prefetch><link href=css/chunk-fc29165c.550ac0fd.css rel=prefetch><link href=css/user.e0889e0f.css rel=prefetch><link href=js/chunk-00c6c5d5.7afd101f.js rel=prefetch><link href=js/chunk-052d4ec6.f78f9d8f.js rel=prefetch><link href=js/chunk-0b20dfaf.d815fcef.js rel=prefetch><link href=js/chunk-19603e13.2e0faf21.js rel=prefetch><link href=js/chunk-2a1d333f.fc638031.js rel=prefetch><link href=js/chunk-2d0c4d97.986aafc3.js rel=prefetch><link href=js/chunk-2d0c847f.053a9cec.js rel=prefetch><link href=js/chunk-2d225ee9.77f8162b.js rel=prefetch><link href=js/chunk-30c3e897.97de4a95.js rel=prefetch><link href=js/chunk-3b2aa7bc.a52dd141.js rel=prefetch><link href=js/chunk-3d257b48.cf558e1d.js rel=prefetch><link href=js/chunk-44a537be.a8907d37.js rel=prefetch><link href=js/chunk-4e13d2a3.e9ecaac8.js rel=prefetch><link href=js/chunk-7468b716.8405e333.js rel=prefetch><link href=js/chunk-7dae1e53.9c9521eb.js rel=prefetch><link href=js/chunk-8af9b2e4.b38eda24.js rel=prefetch><link href=js/chunk-9ad74910.f6a86ccd.js rel=prefetch><link href=js/chunk-a054a0e6.618ab8a2.js rel=prefetch><link href=js/chunk-b9b01d7a.15ff74b7.js rel=prefetch><link href=js/chunk-bbecfa4c.f7986c24.js rel=prefetch><link href=js/chunk-bdc81f80.93e27ea4.js rel=prefetch><link href=js/chunk-dedfa550.fd1149e6.js rel=prefetch><link href=js/chunk-fc29165c.c43d771b.js rel=prefetch><link href=js/user.03e16e1e.js rel=prefetch><link href=css/app.1957ccc7.css rel=preload as=style><link href=css/chunk-vendors.b57e4bfb.css rel=preload as=style><link href=js/app.4a7bb8d4.js rel=preload as=script><link href=js/chunk-vendors.a558cd89.js rel=preload as=script><link href=css/chunk-vendors.b57e4bfb.css rel=stylesheet><link href=css/app.1957ccc7.css rel=stylesheet></head><body><noscript><strong>很抱歉，如果没有 JavaScript 支持，网站将不能正常工作。请启用浏览器的 JavaScript 然后继续。</strong></noscript><div id=app><div class=avue-home><div class=avue-home__main><img class=avue-home__loading src=./svg/loading-spin.svg alt=loading><div class=avue-home__title>正在加载资源</div><div class="avue-home__sub-title d">初次加载资源可能需要较多时间 请耐心等待</div></div></div></div><script src=util/aes.js charset=utf-8></script><script src=cdn/vue/2.5.2/vue.min.js charset=utf-8></script><script src=cdn/vuex/2.4.1/vuex.min.js charset=utf-8></script><script src=cdn/vue-router/3.0.1/vue-router.min.js charset=utf-8></script><script src=cdn/axios/1.0.0/axios.min.js charset=utf-8></script><script src=cdn/element-ui/2.12.0/index.js charset=utf-8></script><script src=cdn/avue/2.1.2/avue.min.js charset=utf-8></script><script src=js/chunk-vendors.a558cd89.js></script><script src=js/app.4a7bb8d4.js></script></body></html>
